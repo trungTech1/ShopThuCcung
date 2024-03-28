@@ -21,4 +21,11 @@ export default defineConfig({
       "@admin": `${path.resolve(__dirname, "./src/papes/admin/")}`,
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/Style/styleAll.scss";',
+      },
+    },
+  },
 });
